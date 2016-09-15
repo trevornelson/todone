@@ -2,5 +2,7 @@
   <h1>To-Done List</h1>
 </header>
 <section class="row">
-  <input type="text">
+  <ul class="list-group">
+    <task-item ng-repeat="task in tasks track by $index" task="task" index="{{ $index }}" last="{{ $last }}"></task-item>
+  </ul>
 </section>
