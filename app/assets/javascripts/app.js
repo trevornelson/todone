@@ -1,6 +1,7 @@
 app = angular.module('app', [
   'templates',
   'ngRoute',
+  'ng-token-auth',
   'controllers'
 ]);
 
@@ -9,5 +10,9 @@ app.config([ '$routeProvider', function($routeProvider) {
     .when('/', {
       templateUrl: 'index.html',
       controller: 'ListController'
+    })
+    .when('/', {
+      templateUrl: 'user_sessions/new.html',
+      controller: 'UserSessionsController'
     });
 }]);

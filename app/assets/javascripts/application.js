@@ -14,5 +14,7 @@
 //= require jquery_ujs
 //= require angular/angular
 //= require angular-route/angular-route
+//= require angular-cookie/angular-cookie
 //= require angular-rails-templates
+//= require ng-token-auth
 //= require_tree .
