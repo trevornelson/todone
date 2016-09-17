@@ -1,3 +1,3 @@
-angular.module('controllers', [])
-  .controller('UserSessionsController', ['$scope', function($scope) {
-  }]);
+controllers = angular.module('controllers')
+controllers.controller('UserSessionsController', ['$scope', function($scope) {
+}]);

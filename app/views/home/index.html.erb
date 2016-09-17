@@ -1,7 +1,7 @@
 <div class="container-fluid" ng-app="app">
   <div class="view-container">
-  <li ng-show="!user.id"><a ng-href="/#/sign_in">Sign in</a></li>
-  <li ng-show="user.id"><a ng-click="signOut()">Sign out</a></li>
+  <span ng-show="!user.id"><a ng-href="/#/sign_in">Sign in</a></span>
+  <span ng-show="user.id">{{user.email}} | <a ng-click="signOut()">Sign out</a></span>
   <div ng-view class="view-frame animate-view"></div>
   </div>
 </div>

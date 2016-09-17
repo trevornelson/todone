@@ -5,6 +5,8 @@ app = angular.module('app', [
   'controllers'
 ]);
 
+controllers = angular.module('controllers',[])
+
 app.config([ '$routeProvider', function($routeProvider) {
   $routeProvider
     .when('/', {
