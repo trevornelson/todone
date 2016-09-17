@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 feature 'Authentication', js: true do
-  feature 'login' do
+  pending 'login' do
     scenario 'with valid inputs' do
       @user = FactoryGirl.create(:confirmed_user)
       visit '/#/sign_in'
