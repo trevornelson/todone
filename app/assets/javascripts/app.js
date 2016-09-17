@@ -11,7 +11,7 @@ app.config([ '$routeProvider', function($routeProvider) {
       templateUrl: 'index.html',
       controller: 'ListController'
     })
-    .when('/', {
+    .when('/sign_in', {
       templateUrl: 'user_sessions/new.html',
       controller: 'UserSessionsController'
     });
