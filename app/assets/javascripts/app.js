@@ -17,4 +17,11 @@ app.config([ '$routeProvider', function($routeProvider) {
       templateUrl: 'user_sessions/new.html',
       controller: 'UserSessionsController'
     });
+
+}]);
+
+app.run(['$rootScope', '$location', function($rootScope, $location) {
+  $rootScope.$on('auth:login-success', function(event, user) {
+    $location.path('/');
+  });
 }]);
