@@ -5,7 +5,6 @@ describe Task do
     @user = FactoryGirl.create(:confirmed_user)
     for n in 1..4 do
       @user.tasks.create(title: "Task #{n}")
-      puts n
     end
   end
 
