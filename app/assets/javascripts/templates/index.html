@@ -1,8 +1,10 @@
-<header class="row">
-  <h1>To-Done List</h1>
-</header>
 <section class="row">
-  <ul class="list-group">
-    <task-item ng-repeat="task in tasks track by $index" task="task" index="{{ $index }}" last="{{ $last }}"></task-item>
-  </ul>
+  <div class="tasks-list col-md-6 col-md-offset-3 col-xs-12">
+    <header>
+      <h1>To-Done List</h1>
+    </header>
+    <section class="row">
+      <task-item ng-repeat="task in tasks track by $index" task="task" index="{{ $index }}" last="{{ $last }}"></task-item>
+    </section>
+  </div>
 </section>
