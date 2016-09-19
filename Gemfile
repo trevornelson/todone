@@ -28,6 +28,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'barkmq', github: 'barkbox/barkmq'
 gem 'bower-rails'
 gem 'angular-rails-templates'
 gem 'devise_token_auth'
