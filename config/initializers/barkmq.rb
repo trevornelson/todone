@@ -4,7 +4,6 @@ queue_name = [ Rails.env, 'todone' ].join('-')
 BarkMQ.publisher_config do |c|
   c.logger = Rails.logger
   c.topic_namespace = topic_namespace
-  c.queue_name = queue_name
 
   c.error_handler = BarkMQ::Handlers::DefaultError.new namespace: 'publisher',
                                                        logger: Rails.logger
